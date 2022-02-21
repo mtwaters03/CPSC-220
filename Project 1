@@ -23,12 +23,11 @@ public class Project1 {
 	}
 
 	public static String[] findFactors(int num) {
-		String[] factors = new String[100];
-		String out = new String();
-		for(int i = 1; i <= num; i++) {
+		String factors = String.valueOf(num);
+		factors = factors + ":"
+		for (int i = 1; i <= num; i++) {
 			if(num%i == 0) {
-				System.out.print(num + ":");
-				System.out.format(" %d ", i);
+				factors = factors + String.valueOf(i) + " ";
 		
 		
 		}
